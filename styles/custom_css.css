@@ -1,0 +1,103 @@
+
+body{
+
+    background: hsl(345, 100%, 18%);
+}
+/* .navigation, */
+.footer{
+    background: hsl(42, 63%, 49%);
+} 
+.logo{
+    width: 70%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    background: url();
+}
+/* .btn-section{
+    
+} */
+.bookNow{
+    background: hsl(42, 63%, 49%);
+    border: transparent;
+    border-radius: 0;
+    position: relative;
+}
+.bookNow::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: url("../assest/pattern_design.svg") no-repeat 0/contain ;
+}
+.hero-section, 
+.venue-section{
+    border: transparent;
+    border-radius: 0;
+    background: transparent;
+}
+.card-section{
+    border: transparent;
+    border-radius: 0;
+    background: hsl(42, 63%, 49%); 
+}
+/* .content-section{
+    background: hsl(42, 63%, 49%); 
+} */
+.hero-heading {
+    position: relative; 
+    top: 0px;
+    left: 0px;
+    width: 130%;
+    
+    font-size: 4.5rem !important;
+  
+    padding: 0 10px;
+    z-index: 1;
+}
+.hero-heading::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    background-color: rgb(91, 0, 23);
+    opacity: 70%;
+    z-index: -1;
+    padding: 0 10px;
+}
+.btn-venue,
+.btn-menu{
+    position: relative;
+    border-radius: 0;
+    font-size: 1.5rem;
+    color: rgb(91, 0, 23);
+    
+}
+.btn-venue::after,
+.btn-menu::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    background: transparent;
+    border: 2px solid hsl(42, 63%, 49%);
+    /* border-radius: .25rem; */
+    z-index: -1;
+}
+.btn-menu::after{
+    z-index: -1;
+}
+.menu-section{
+    background-color: transparent;
+    border-radius: 0;
+    z-index: -1;
+}
+.hero-pattern{
+    transform: translateY(-30%)!important;
+}
