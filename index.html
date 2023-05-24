@@ -10,14 +10,17 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script src="https://kit.fontawesome.com/09e326ae53.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/09e326ae53.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles/custom_css.css" />
     <title>Restaurant</title>
   </head>
   <body>
     <div class="container-fluid navigation">
       <div class="container">
-        <nav class="navbar navbar-expand-lg">
+         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"
               ><img src="./assest/logo.svg" alt="logo" class="logo"
@@ -31,7 +34,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon link-light"></span>
+              <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
@@ -44,13 +47,13 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link-light" href="#">Menu</a>
+                  <a class="nav-link link-light" aria-current="page" href="#">Menu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link-light" href="#">Venue</a>
+                  <a class="nav-link link-light" aria-current="page" href="#">Venue</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link-light" href="#">Events</a>
+                  <a class="nav-link link-light" aria-current="page" href="#">Events</a>
                 </li>
               </ul>
               <div class="btn-section text-center">
@@ -59,26 +62,31 @@
                 </button>
               </div>
             </div>
-          </div>
-        </nav>
+          </div> 
+        </nav> 
+        
       </div>
     </div>
     <!-- navigation section end -->
 
     <!-- hero section start -->
-    <div class="container-fluid py-5 my-5">
+    <div class="container-fluid py-sm-0 py-lg-5 my-5">
       <div class="container pb-5">
         <div class="card hero-section mb-3" style="max-width: 100%">
           <div class="row g-0">
-            <div >
-                <img  class="img-fluid position-absolute top-0 start-0 hero-pattern" src="./assest/hero-pattern.svg" alt="hero-pattern">
+            <div>
+              <img
+                class="img-fluid position-absolute top-0 start-0 hero-pattern"
+                src="./assest/hero-pattern.svg"
+                alt="hero-pattern"
+              />
             </div>
-            <div class="col-md-5">
+            <div class="col-md-12 col-lg-5">
               <div
                 class="d-flex flex-column justify-content-between"
                 style="height: 100%"
               >
-                <div class="card-body text-white">
+                <div class="card-body text-white text-sm-center text-lg-start">
                   <h5 class="card-title hero-heading fs-1">
                     Taste the authentic Saudi cuisine
                   </h5>
@@ -87,16 +95,16 @@
                     something beyond flavor.
                   </p>
 
-                  <button type="button" class="btn btn-outline-warning">
+                  <button type="button" class="btn fs-5 mt-3 btn-hero btn-outline-warning">
                     Our Menu
                   </button>
                 </div>
-                <div class="mt-3">
+                <div class="my-3">
                   <img src="./assest/circle-img.png" alt="circle-img" />
                 </div>
               </div>
             </div>
-            <div class="col-md-7 d-flex">
+            <div class="col-md-12 col-lg-7 d-flex">
               <img
                 src="./assest/image 1.png"
                 class="img-fluid rounded-start"
@@ -110,23 +118,23 @@
 
     <!-- hero section end -->
     <!-- Venue section start -->
-    <div class="container-fluid py-5 my-5">
+    <div class="container-fluid py-sm-0 py-lg-5 my-5">
       <div class="container py-5">
         <div class="card venue-section mb-3" style="max-width: 100%">
-          <div class="row g-0 position-relative ">
-            <div class="col-md-4">
+          <div class="row g-0 position-relative">
+            <div class="col-md-12 col-lg-4 text-center mx-md-auto">
               <img
                 src="./assest/hero-venue-img.png"
                 class="img-fluid rounded-start"
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-12 col-lg-8">
               <div
-                class="card-body text-white d-flex flex-column gap-5"
+                class="card-body text-center text-white d-flex flex-column gap-5"
                 style="max-height: 100%"
               >
-                <div>
+                <div class="mt-sm-3 mt-lg-0">
                   <h5 class="card-title fs-1">
                     A distinctive dining destination inspired by the culture.
                   </h5>
@@ -134,12 +142,12 @@
                     Experience Al Balad old town of Jeddah vibes.
                   </p>
                 </div>
-                <div class="ps-3">
+                <div class="ps-3 mx-auto mx-md-0">
                   <button type="button" class="btn btn-warning btn-venue">
                     Our Venue
                   </button>
                 </div>
-                <div class="d-flex flex-sm-column flex-md-row gap-5">
+                <div class="d-flex flex-sm-column flex-md-row justify-content-center gap-5">
                   <div class="rounded">
                     <img
                       class="img-fluid"
@@ -166,8 +174,12 @@
               </div>
             </div>
             <div>
-              <img  class="img-fluid position-absolute  top-50 end-0 translate-middle-y" src="./assest/venu-pattern.svg" alt="venu-pattern">
-          </div>
+              <img
+                class="img-fluid position-absolute top-50 end-0 translate-middle-y"
+                src="./assest/venu-pattern.svg"
+                alt="venu-pattern"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -175,7 +187,7 @@
     <!-- Venue section end -->
 
     <!-- menu section start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-sm-0 py-lg-5">
       <div class="container">
         <div class="card menu-section text-white">
           <img src="./assest/menu-img.png" class="card-img" alt="menu-img" />
@@ -184,7 +196,11 @@
             <div
               class="card-img-overlay d-flex flex-column align-items-center justify-content-center gap-3"
             >
-              <img class="img-fluid" src="./assest/menu-flower.png" alt="menue flower" />
+              <img
+                class="img-fluid"
+                src="./assest/menu-flower.png"
+                alt="menue flower"
+              />
               <h5 class="card-title fs-1 text-center" style="width: 80%">
                 A unique menu that reflects the true essence of the Saudi
                 cuisine
@@ -205,7 +221,7 @@
     <!-- menu section end -->
 
     <!-- chicken card section start -->
-    <div class="container-fluid py-5 my-5">
+    <div class="container-fluid py-sm-0 py-lg-5 my-5">
       <div class="container">
         <div class="card card-section mb-3" style="max-width: 100%">
           <div class="row g-0">
@@ -213,7 +229,6 @@
               class="col-md-5 d-flex justify-content-between align-items-center"
             >
               <div class="card-body content-section p-lg-5">
-                  
                 <p class="card-text fs-4">
                   You can't go wrong with Chicken Mandi, I had it twice. The
                   chicken was cooked perfectly, juicy & soft (usually mandi
@@ -274,16 +289,27 @@
               <a href="#" class="nav-link px-2 text-muted">Contact us</a>
             </li>
           </ul>
-          <div class="d-flex flex-row align-items-center justify-content-around">
-          <p class="text-center text-muted">© 2021 | All rights reserved</p>
-          <div class="d-flex flex-row gap-3 ">
-            <a href="#" class="text-muted"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" class="text-muted"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#" class="text-muted"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="text-muted"><i class="fa-brands fa-linkedin"></i></a>
-
+          <div
+            class="d-flex flex-row align-items-center justify-content-around"
+          >
+            <p class="text-center m-0 text-muted">
+              © 2021 | All rights reserved
+            </p>
+            <div class="d-flex flex-row gap-3">
+              <a href="#" class="text-muted"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="text-muted"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="text-muted"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="text-muted"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
           </div>
-        </div>
         </footer>
       </div>
     </div>
