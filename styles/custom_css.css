@@ -108,6 +108,9 @@ body{
 .hero-pattern{
     transform: translateY(-30%)!important;
 }
+.card-content{
+    z-index: 1;
+}
 @media (min-width: 992px){
 .hero-heading {
     position: relative; 
