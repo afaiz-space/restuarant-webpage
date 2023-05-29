@@ -84,6 +84,7 @@ body{
     color: rgb(91, 0, 23);
     
 }
+
 .btn-venue::after,
 .btn-menu::after{
     content: "";
@@ -97,16 +98,18 @@ body{
     /* border-radius: .25rem; */
     z-index: -1;
 }
-.btn-menu::after{
-    z-index: -1;
-}
+
 .menu-section{
     background-color: transparent;
     border-radius: 0;
-    z-index: -1;
+    z-index: 1;
 }
 .hero-pattern{
     transform: translateY(-30%)!important;
+    z-index: -1;
+}
+.venu-pattern{
+    z-index: -1;
 }
 .card-content{
     z-index: 1;
